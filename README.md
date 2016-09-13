@@ -6,15 +6,15 @@ Supports only x86_64.
 Made in C++
 
 Commands :
+	 
+	 disassemble <label> : Disassembly
 
-disassemble <label> : Disassembly
+	 run <args>
 
-run <args>
+	 brk *<0xaddr> : Breakpoints
 
-brk *<0xaddr> : Breakpoints
+	     -> continue : Program continues running
 
-    -> continue : Program continues running
+	     -> print <register_name>
 
-    -> print <register_name>
-
-    -> set <register_name
+	     -> set <register_name
