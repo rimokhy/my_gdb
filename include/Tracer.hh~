@@ -1,0 +1,28 @@
+//
+// Tracer.hh for  in /home/rimokh_y/secu_training/tracker
+// 
+// Made by Yohan RIMOKH
+// Login   <rimokh_y@epitech.eu>
+// 
+// Started on  Mon May  2 20:47:14 2016 Yohan RIMOKH
+// Last update Tue May  3 02:24:25 2016 Yohan RIMOKH
+//
+
+#pragma once
+
+#include <string>
+#include <sys/ptrace.h>
+#include <csignal>
+#include "Fork.hpp"
+
+class   Tracer
+{
+  char          **_av;
+  Fork          *_process;
+public:
+  Tracer(char **av);
+  ~Tracer();
+  void  launch();
+  void  launchChild();
+  bool  traceChild();
+};

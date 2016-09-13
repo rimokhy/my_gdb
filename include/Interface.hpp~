@@ -1,0 +1,20 @@
+//
+// Interface.hpp for  in /home/rimokh_y/secu_training/tracker
+// 
+// Made by Yohan RIMOKH
+// Login   <rimokh_y@epitech.eu>
+// 
+// Started on  Sat May  7 20:46:58 2016 Yohan RIMOKH
+// Last update Sat May  7 20:48:01 2016 Yohan RIMOKH
+//
+
+#pragma once
+
+class   Interface
+{
+private:
+public:
+  static bool   launchCmd()
+  {
+  }
+};

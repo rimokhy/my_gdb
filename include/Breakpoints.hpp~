@@ -1,0 +1,30 @@
+//
+// Breakpoints.hpp for  in /home/rimokh_y/secu_training/tracker
+// 
+// Made by Yohan RIMOKH
+// Login   <rimokh_y@epitech.eu>
+// 
+// Started on  Thu May  5 05:23:37 2016 Yohan RIMOKH
+// Last update Thu May  5 05:24:55 2016 Yohan RIMOKH
+//
+
+#pragma once
+
+typedef void *target_addr_t;
+
+#define REGISTER_IP RIP
+#define TRAP_LEN    1
+#define TRAP_INST   0xCC
+#define TRAP_MASK   0xFFFFFFFFFFFFFF00
+
+struct breakpoint {
+  target_addr_t addr;
+  long orig_code;
+};
+class   Breakpoints
+{
+void breakfast_attach(pid_t pid);
+target_addr_t breakfast_getip(pid_t pid);
+struct breakpoint *breakfast_break(pid_t pid, target_addr_t addr);
+int breakfast_run(pid_t pid, struct breakpoint *bp);
+};
