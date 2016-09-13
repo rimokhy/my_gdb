@@ -10,6 +10,9 @@ Commands :
 disassemble <label> : Disassembly
 run <args>
 brk *<0xaddr> : Breakpoints
+
     -> continue : Program continues running
+
     -> print <register_name>
+
     -> set <register_name
