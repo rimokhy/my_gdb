@@ -8,7 +8,9 @@ Made in C++
 Commands :
 
 disassemble <label> : Disassembly
+
 run <args>
+
 brk *<0xaddr> : Breakpoints
 
     -> continue : Program continues running
